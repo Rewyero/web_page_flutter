@@ -8,12 +8,11 @@ void main() {
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
-  Size get preferredSize => const Size.fromHeight(100);
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: "Alen-Page",
+      title: "Alen Web",
       home: Scaffold(
         appBar: MyAppBar(),
       ),
