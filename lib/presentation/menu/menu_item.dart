@@ -11,7 +11,7 @@ class Menuitem extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Text(
         text,
-        style: GoogleFonts.acme(fontSize: 15),
+        style: GoogleFonts.acme(fontSize: 17),
       ),
     );
   }

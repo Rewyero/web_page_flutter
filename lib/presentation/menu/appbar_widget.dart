@@ -19,10 +19,13 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
             Text(
               apptitle,
               style:
-                  GoogleFonts.roboto(fontSize: 25, fontWeight: FontWeight.bold),
+                  GoogleFonts.roboto(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             const Spacer(),
-            const Menuitem(text: "Test")
+            const Menuitem(text: "Test"),
+            const Menuitem(text: "Test"),
+            const Menuitem(text: "Test"),
+            const Menuitem(text: "Test"),
           ],
         ),
         flexibleSpace: Container(
