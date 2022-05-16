@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'appbar_widget.dart';
+import 'presentation/menu/appbar_widget.dart';
 
 void main() {
   runApp(const HomePage());
@@ -15,6 +15,7 @@ class HomePage extends StatelessWidget {
       title: "Alen Web",
       home: Scaffold(
         appBar: MyAppBar(),
+        body: Placeholder(),
       ),
     );
   }
