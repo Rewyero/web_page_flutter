@@ -1,13 +1,13 @@
+import 'package:alen_web/pages.dart/start_page.dart';
 import 'package:flutter/material.dart';
-
 import 'presentation/menu/appbar_widget.dart';
 
 void main() {
-  runApp(const HomePage());
+  runApp(const MyPage());
 }
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class MyPage extends StatelessWidget {
+  const MyPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
       title: "Alen Web",
       home: Scaffold(
         appBar: MyAppBar(),
-        body: Placeholder(),
+        body: HomePage(),
       ),
     );
   }
