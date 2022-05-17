@@ -5,8 +5,13 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Placeholder(),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 25),
+      child: Row(children: const [
+        Placeholder(),
+        Text("Überschrift"),
+        Text("Beschreibung"),
+      ]),
     );
   }
 }
