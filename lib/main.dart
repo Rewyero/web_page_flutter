@@ -11,11 +11,24 @@ class MyPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: "Alen Web",
       home: Scaffold(
-        appBar: MyAppBar(),
-        body: HomePage(),
+        appBar: const MyAppBar(),
+        body: ListView(
+          children: [
+            Row(
+              children: [
+                HomePage(),
+              ],
+            ),
+            Row(
+              children: [
+                HomePage(),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
