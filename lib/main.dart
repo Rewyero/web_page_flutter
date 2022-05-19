@@ -18,12 +18,12 @@ class MyPage extends StatelessWidget {
         body: ListView(
           children: [
             Row(
-              children: [
+              children: const [
                 HomePage(),
               ],
             ),
             Row(
-              children: [
+              children: const [
                 HomePage(),
               ],
             ),
