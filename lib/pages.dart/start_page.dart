@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 5),
             child: Column(
-              children: [
+              children: const [
                 Placeholder(),
               ],
             ),

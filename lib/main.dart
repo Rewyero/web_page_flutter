@@ -15,8 +15,8 @@ class MyPage extends StatelessWidget {
     return MaterialApp(
       title: "Alen Web",
       home: const Scaffold(
-        appBar: MyAppBar(),
-        body: Placeholder(),
+        appBar: MenuItems(),
+        body: HomePage(),
       ),
       builder: (context, widget) => ResponsiveWrapper.builder(widget,
           defaultScale: true,
