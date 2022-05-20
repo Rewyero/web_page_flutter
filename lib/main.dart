@@ -1,7 +1,7 @@
 import 'package:alen_web/pages.dart/start_page.dart';
+import 'package:alen_web/presentation/page_wrapper/page_template.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
-import 'presentation/menu/appbar_widget.dart';
 
 void main() {
   runApp(const MyPage());
@@ -13,11 +13,9 @@ class MyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Alen Web",
-      home: const Scaffold(
-        appBar: MenuItems(),
-        body: HomePage(),
-      ),
+      debugShowCheckedModeBanner: false,
+      title: "My Web Page",
+      home: const PageTemplate(child: HomePage()),
       builder: (context, widget) => ResponsiveWrapper.builder(widget,
           defaultScale: true,
           minWidth: 400,

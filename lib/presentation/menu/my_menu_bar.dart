@@ -1,14 +1,12 @@
 import 'package:alen_web/constans.dart';
-import 'package:alen_web/presentation/menu/menu_item.dart';
+import 'package:alen_web/presentation/buttons/kontakt.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gradient_colors/flutter_gradient_colors.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:responsive_framework/responsive_framework.dart';
 
-class MenuItems extends StatelessWidget implements PreferredSizeWidget {
+class MyMenuBar extends StatelessWidget {
   @override
-  Size get preferredSize => const Size.fromHeight(60);
-  const MenuItems({
+  const MyMenuBar({
     Key? key,
   }) : super(key: key);
 
@@ -23,16 +21,8 @@ class MenuItems extends StatelessWidget implements PreferredSizeWidget {
                 GoogleFonts.roboto(fontSize: 20, fontWeight: FontWeight.bold),
           ),
           const Spacer(),
-          const ResponsiveVisibility(
-            child: Menuitem(text: "Test"),
-            hiddenWhen: [
-              Condition.smallerThan(name: DESKTOP),
-            ],
-          ),
-          const Menuitem(text: "Test"),
-          const Menuitem(text: "Test"),
-          const Menuitem(text: "Test"),
-          const Menuitem(text: "Test"),
+          //const Menuitem(text: "Test"),
+          const KontaktButton(),
         ],
       ),
       flexibleSpace: Container(

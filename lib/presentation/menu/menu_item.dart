@@ -7,11 +7,20 @@ class Menuitem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
-      child: Text(
-        text,
-        style: GoogleFonts.acme(fontSize: 17),
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: () {
+          // ignore: avoid_print
+          print("On Click!");
+        },
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Text(
+            text,
+            style: GoogleFonts.acme(fontSize: 17),
+          ),
+        ),
       ),
     );
   }
