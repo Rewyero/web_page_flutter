@@ -1,3 +1,6 @@
+import 'package:alen_web/pages/HomePage/widgets/multi_plattform.dart';
+import 'package:alen_web/presentation/page_wrapper/centered_constrained_wrapper.dart';
+import 'package:alen_web/presentation/page_wrapper/page_template.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -5,6 +8,14 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    List<Widget> partblocks = [
+      const CenteredConstrainedWrapper(child: MultiPlattform()),
+    ];
+    return PageTemplate(
+      child: ListView.builder(
+        itemCount: partblocks.length,
+        itemBuilder: (context, index) => partblocks[index],
+      ),
+    );
   }
 }

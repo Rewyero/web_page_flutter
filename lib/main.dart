@@ -1,5 +1,4 @@
 import 'package:alen_web/pages/HomePage/start_page.dart';
-import 'package:alen_web/presentation/page_wrapper/page_template.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 
@@ -15,7 +14,7 @@ class MyPage extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "My Web Page",
-      home: const PageTemplate(child: HomePage()),
+      home: const HomePage(),
       builder: (context, widget) => ResponsiveWrapper.builder(widget,
           defaultScale: true,
           minWidth: 400,
