@@ -42,7 +42,7 @@ class CustomDrawer extends StatelessWidget {
                 const SizedBox(
                   height: 40,
                 ),
-                // Add Menu Items Here! Like: const Menuitem(text: "Test"),
+                // [MOBILE VIEW] Add Menu Items Here! Like: const Menuitem(text: "Test"),
               ],
             ),
             Column(

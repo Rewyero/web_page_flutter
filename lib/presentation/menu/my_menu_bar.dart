@@ -24,7 +24,7 @@ class MyMenuBar extends StatelessWidget {
                 GoogleFonts.roboto(fontSize: 20, fontWeight: FontWeight.bold),
           ),
           const Spacer(),
-          //You can Add your Menu Items here Like: const Menuitem(text: "Test"),
+          // [DESKTOP VIEW]You can Add your Menu Items here Like: const Menuitem(text: "Test"),
           const KontaktButton(),
         ],
       ),
