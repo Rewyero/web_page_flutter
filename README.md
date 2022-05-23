@@ -1,6 +1,6 @@
-# alen_web
+# Flutter Web-Page Template
 
-A new Flutter project.
+This is a Flutter Template for Web-App.
 
 ## Getting Started
 
