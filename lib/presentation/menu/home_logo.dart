@@ -6,7 +6,7 @@ class HomeLogo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image.asset(
-      "images/favicon.png",
+      "images/homelogo.png",
       height: 37,
       fit: BoxFit.cover,
     );
