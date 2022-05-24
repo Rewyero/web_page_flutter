@@ -13,11 +13,11 @@ class MyPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "My Web Page",
+      title: "My Web App",
       home: const HomePage(),
       builder: (context, widget) => ResponsiveWrapper.builder(widget,
           defaultScale: true,
-          minWidth: 400,
+          minWidth: 450,
           defaultName: MOBILE,
           breakpoints: const [
             ResponsiveBreakpoint.autoScale(450, name: MOBILE),

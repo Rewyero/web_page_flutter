@@ -1,4 +1,6 @@
+import 'package:alen_web/constans.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gradient_colors/flutter_gradient_colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
@@ -10,7 +12,8 @@ class MultiPlattform extends StatelessWidget {
     final responsiveValue = ResponsiveWrapper.of(context);
     return Container(
       width: double.infinity,
-      decoration: const BoxDecoration(color: Colors.white),
+      decoration: const BoxDecoration(
+          gradient: LinearGradient(colors: GradientColors.gradeGrey)),
       child: ResponsiveRowColumn(
         columnVerticalDirection: VerticalDirection.up,
         rowCrossAxisAlignment: CrossAxisAlignment.center,
@@ -27,34 +30,23 @@ class MultiPlattform extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
-                    "Multi-Plattform",
-                    style: GoogleFonts.acme(
-                        fontSize:
-                            responsiveValue.isLargerThan(TABLET) ? 20 : 18,
-                        color: Colors.lightBlue,
-                        fontWeight: FontWeight.bold),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  Text(
-                    "Reach users on every screen",
+                    nameTitle,
                     style: GoogleFonts.acme(
                         height: 0.9,
                         fontSize:
-                            responsiveValue.isLargerThan(TABLET) ? 50 : 30,
-                        color: Colors.grey[700],
+                            responsiveValue.isLargerThan(TABLET) ? 40 : 30,
+                        color: const Color.fromARGB(255, 73, 72, 72),
                         fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(
                     height: 20,
                   ),
                   Text(
-                    "Deploy to multiple devices from single codebase",
+                    detailsText,
                     style: GoogleFonts.acme(
                       height: 0.9,
                       fontSize: responsiveValue.isLargerThan(TABLET) ? 20 : 18,
-                      color: Colors.grey[600],
+                      color: Colors.white,
                     ),
                   ),
                 ],
@@ -64,12 +56,16 @@ class MultiPlattform extends StatelessWidget {
           ResponsiveRowColumnItem(
             rowFlex: 1,
             child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-              child: Image.asset(
-                "images/homelogo.jpg",
+              padding: const EdgeInsets.all(10.0),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10.0),
+                child: Image.asset(
+                  imgPath,
+                  height: 300,
+                ),
               ),
             ),
-          )
+          ),
         ],
       ),
     );
